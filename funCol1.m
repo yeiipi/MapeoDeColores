@@ -1,6 +1,5 @@
 function [M] = funCol1(t)
 
-disp("FUN1")
 f1 = t.*cos(t ./ 2);
 f2 = t .* 2;
 f3 = t;

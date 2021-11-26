@@ -1,13 +1,9 @@
-function [R,G,B] = funCol3(t)
+function [M] = funCol3(t)
 
-R = abs(t-30);
-G = t ./ pi;
-B = t;
+bajos = t ./ 1.5;
+medios =  t;
+altos = t .* 1.5;
 
-% ===========
-R = uint8(R);
-G = uint8(G);
-B = uint8(B);
-
+M = bajos .* (t <= 85) + medios .* ( t > 85 ) .* ( t < 170 ) + altos .* ( t >= 170 );
 end
 
