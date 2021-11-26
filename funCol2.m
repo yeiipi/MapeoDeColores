@@ -1,8 +1,8 @@
 function [R,G,B] = funCol2(t)
 
-R = abs(t-30);
-G = t ./ pi;
-B = t;
+R = @(t) 3 .* cos(t) + t;
+G = @(t) 2.*sin(t)+t;
+B = @(t) abs(t-100);
 
 % ===========
 R = uint8(R);

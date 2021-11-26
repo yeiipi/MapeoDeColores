@@ -1,7 +1,8 @@
 function [M] = funCol1(t)
 
-f1 = t ./ 2;
-f2 = t .* 3;
+disp("FUN1")
+f1 = t.*cos(t ./ 2);
+f2 = t .* 2;
 f3 = t;
 
 
